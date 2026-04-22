@@ -11,6 +11,6 @@ define('WEB_STYLE_DARK', true);
 
 define('STEAM_API_KEY', '9DC0D1204D5B5601BB89A064EE6588DF');
 define('STEAM_DOMAIN_NAME', 'hoy-se-juega-production.up.railway.app');
-define('STEAM_LOGOUT_PAGE', 'httpps://hoy-se-juega-production.up.railway.app');
-define('STEAM_LOGIN_PAGE', 'httpps://hoy-se-juega-production.up.railway.app');
+define('STEAM_LOGOUT_PAGE', 'https://hoy-se-juega-production.up.railway.app');
+define('STEAM_LOGIN_PAGE', 'https://hoy-se-juega-production.up.railway.app');
 
