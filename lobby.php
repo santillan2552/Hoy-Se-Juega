@@ -32,8 +32,8 @@ $pdo->exec("INSERT IGNORE INTO lobby_state (id, maplist) VALUES (1, 'de_dust2,de
 
 $loggedIn = isset($_SESSION['steamid']);
 $steamid = $loggedIn ? $_SESSION['steamid'] : null;
-$playerName = $loggedIn ? $_SESSION['username'] : null;
-$playerAvatar = $loggedIn ? $_SESSION['avatar'] : null;
+$playerName = $loggedIn ? ($_SESSION['username'] ?? $_SESSION['steamid']) : null;
+$playerAvatar = $loggedIn ? ($_SESSION['avatar'] ?? 'https://avatars.steamstatic.com/fef49e7fa7e1997310d705b2a6158ff8dc1cdfeb_full.jpg') : null;
 
 if ($loggedIn) {
     $stmt = $pdo->prepare("INSERT INTO lobby_players (steamid, name, avatar) VALUES (?, ?, ?) ON DUPLICATE KEY UPDATE name=VALUES(name), avatar=VALUES(avatar)");
