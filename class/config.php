@@ -30,8 +30,8 @@ define('STEAM_DOMAIN_NAME', 'hoy-se-juega.onrender.com');
 define('API_URL', 'https://raw.githubusercontent.com/rogeraabbccdd/CSGO-API/main/public/api');
 
 // Redirection pages after login/logout
-define('STEAM_LOGIN_PAGE', 'https://hoy-se-juega.onrender.com');
-define('STEAM_LOGOUT_PAGE', 'https://hoy-se-juega.onrender.com');
+define('STEAM_LOGIN_PAGE', 'https://hoy-se-juega.onrender.com/index.php');
+define('STEAM_LOGOUT_PAGE', 'https://hoy-se-juega.onrender.com/index.php');
 
 // --- Error Reporting ---
 // Set to 0 for production to hide sensitive error details from users.
