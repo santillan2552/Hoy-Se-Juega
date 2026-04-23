@@ -152,7 +152,7 @@ main { max-width: 1100px; margin: 0 auto; padding: 2rem; }
   <div class="logo">⚡ Hoy Se Juega</div>
   <div class="user-info">
     <?php if ($loggedIn): ?>
-      <img src="<?= htmlspecialchars($playerAvatar) ?>" alt="">
+      <img src="<?= htmlspecialchars($playerAvatar ?? '') ?>" alt="">
       <span><?= htmlspecialchars($playerName) ?></span>
       <a href="logout.php" class="btn-logout">Salir</a>
     <?php else: ?>
