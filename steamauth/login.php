@@ -1,6 +1,8 @@
-php<?php
+<?php
 require 'steamauth.php';
-if (isset($_GET['login']) || !isset($_GET['logout'])) {
+if (isset($_GET['logout'])) {
+    logout();
+} else {
     login();
 }
 ?>
