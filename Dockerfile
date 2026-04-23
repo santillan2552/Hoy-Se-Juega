@@ -13,5 +13,7 @@ RUN a2enmod rewrite
 
 WORKDIR /var/www/html
 
+COPY . .
+
 # Grant permissions for PHP sessions
 RUN chmod 777 /tmp
