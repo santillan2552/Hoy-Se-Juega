@@ -133,7 +133,7 @@ function setVetoFirst(team) {
 
 function save() {
   const config = {
-    matchid: Date.now().toString(),
+    matchid: "1",
     num_maps: bo,
     maplist: Array.from(selectedMaps),
     skip_veto: false,
