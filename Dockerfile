@@ -17,3 +17,6 @@ COPY . .
 
 # Grant permissions for PHP sessions
 RUN chmod 777 /tmp
+RUN chmod -R 755 /var/www/html
+
+EXPOSE 80
