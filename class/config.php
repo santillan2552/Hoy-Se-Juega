@@ -20,7 +20,7 @@ define('STEAM_API_KEY', '9DC0D1204D5B5601BB89A064EE6588DF');
 // --- Site Settings ---
 // The main URL of your website (e.g., https://skins.example.com). 
 // IMPORTANT: Do not include a trailing slash at the end.
-define('STEAM_DOMAIN_NAME', '190.246.42.239');
+define('STEAM_DOMAIN_NAME', 'hoy-se-juega.onrender.com');
 
 // --- API URL ---
 // Base URL for the CSGO API.
@@ -30,8 +30,8 @@ define('STEAM_DOMAIN_NAME', '190.246.42.239');
 define('API_URL', 'https://raw.githubusercontent.com/rogeraabbccdd/CSGO-API/main/public/api');
 
 // Redirection pages after login/logout
-define('STEAM_LOGIN_PAGE', 'https://190.246.42.239/hoysejuega');
-define('STEAM_LOGOUT_PAGE', 'https://190.246.42.239/hoysejuega');
+define('STEAM_LOGIN_PAGE', 'https://hoy-se-juega.onrender.com');
+define('STEAM_LOGOUT_PAGE', 'https://hoy-se-juega.onrender.com');
 
 // --- Error Reporting ---
 // Set to 0 for production to hide sensitive error details from users.
