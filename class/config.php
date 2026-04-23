@@ -1,0 +1,41 @@
+<?php
+/**
+ * Global Configuration File
+ * This file contains database credentials, API keys, and site settings.
+ * * IMPORTANT: For security reasons, do not upload your real credentials to public repositories.
+ */
+
+// --- Database Configuration ---
+// If you are using the provided Docker setup, DB_HOST is usually '172.18.0.1', 'host.docker.internal' or the service name.
+define('DB_HOST', '45.235.98.222');
+define('DB_PORT', '3306');
+define('DB_NAME', 's1244_css');
+define('DB_USER', 'u1244_6TZ9T6P2MQ');
+define('DB_PASS', 'LT9@1SrBedjZnqI9!JsfBZTv');
+
+// --- Steam API Configuration ---
+// You can get your Steam Web API Key here: https://steamcommunity.com/dev/apikey
+define('STEAM_API_KEY', '9DC0D1204D5B5601BB89A064EE6588DF');
+
+// --- Site Settings ---
+// The main URL of your website (e.g., https://skins.example.com). 
+// IMPORTANT: Do not include a trailing slash at the end.
+define('STEAM_DOMAIN_NAME', '190.246.42.239');
+
+// --- API URL ---
+// Base URL for the CSGO API.
+// The original ByMykel/CSGO-API only supports 'en' and 'zh-CN'.
+// My fork adds support for 'zh-TW'.
+// IMPORTANT: Do not include a trailing slash at the end.
+define('API_URL', 'https://raw.githubusercontent.com/rogeraabbccdd/CSGO-API/main/public/api');
+
+// Redirection pages after login/logout
+define('STEAM_LOGIN_PAGE', 'https://190.246.42.239/hoysejuega');
+define('STEAM_LOGOUT_PAGE', 'https://190.246.42.239/hoysejuega');
+
+// --- Error Reporting ---
+// Set to 0 for production to hide sensitive error details from users.
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+
+?>

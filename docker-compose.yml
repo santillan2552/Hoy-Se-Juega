@@ -1,0 +1,10 @@
+services:
+  skins-app:
+    build: .
+    container_name: skins-web-modern
+    restart: always
+    ports:
+      - "8082:80"
+    volumes:
+      - .:/var/www/html
+      - ./vhost.conf:/etc/apache2/sites-available/000-default.conf
