@@ -11,11 +11,16 @@ RUN apt-get update && apt-get install -y \
 # Enable Apache mod_rewrite
 RUN a2enmod rewrite
 
+# Copy virtual host config
+COPY vhost.conf /etc/apache2/sites-available/000-default.conf
+
 WORKDIR /var/www/html
 
 COPY . .
 
-# Grant permissions for PHP sessions
+# Grant permissions
 RUN chmod 777 /tmp
 RUN chmod -R 755 /var/www/html
 RUN chown -R www-data:www-data /var/www/html
+
+EXPOSE 80
