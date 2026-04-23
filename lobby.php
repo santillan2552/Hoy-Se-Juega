@@ -1,7 +1,9 @@
 <?php
 session_start();
 require_once __DIR__ . '/class/config.php';
-require_once __DIR__ . '/steamauth/userInfo.php';
+if (isset($_SESSION['steamid'])) {
+    require_once __DIR__ . '/steamauth/userInfo.php';
+}
 
 $pdo = new PDO("mysql:host=".DB_HOST.";port=".DB_PORT.";dbname=".DB_NAME.";charset=utf8", DB_USER, DB_PASS);
 
