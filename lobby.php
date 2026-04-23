@@ -156,7 +156,7 @@ main { max-width: 1100px; margin: 0 auto; padding: 2rem; }
       <span><?= htmlspecialchars($playerName) ?></span>
       <a href="logout.php" class="btn-logout">Salir</a>
     <?php else: ?>
-      <a href="steamauth/login.php" class="btn-steam">
+      <a href="steamauth/steamauth.php" class="btn-steam">
         <svg width="16" height="16" viewBox="0 0 32 32" fill="#c7d5e0"><path d="M16 0C7.163 0 0 7.163 0 16c0 7.833 5.635 14.337 13.13 15.664L16.5 24h-.5a8 8 0 110-16 8 8 0 018 8h-8l-3.5 8.5C14.18 24.83 15.083 25 16 25c4.97 0 9-4.03 9-9s-4.03-9-9-9z"/></svg>
         Iniciar sesión con Steam
       </a>
